@@ -28,7 +28,9 @@ Symulator przeprowadza $N = 100$ iteracji dla sygnału odniesienia o wartości `
 * **Precyzja vs Izolacja błędu:** Średnia ważona najlepiej redukuje szum gaussowski w warunkach nominalnych, jednak przy awarii kanału nie zapewnia jego pełnej izolacji – błąd częściowo „przecieka” do sygnału wyjściowego.
 * **Dylemat dostępności i bezpieczeństwa:** Głosowanie medianowe maksymalizuje dostępność systemu - zawsze zwraca wynik, co jest kluczowe np. w układach sterowania lotem, natomiast głosowanie większościowe priorytetyzuje bezpieczeństwo, wstrzymując generowanie wyniku w sytuacji braku jednoznacznego konsensusu.
 
-## Uruchomienie i struktura repozytorium
+### Pliki w projekcie
+* `Symulacja.py` – Kod źródłowy symulatora generujący wykresy przebiegów czasowych, wykresy błędów bezwzględnych oraz eksportujący surowe dane pomiarowe do pliku CSV.
+* `sprawozdanie.pdf` – Pełna dokumentacja techniczna, schemat blokowy symulatora oraz szczegółowa analiza wykresów pudełkowych.
 
 ### Wymagania
 Do uruchomienia symulacji wymagany jest Python 3 oraz biblioteki `numpy` i `matplotlib`:
